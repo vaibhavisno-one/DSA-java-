@@ -36,23 +36,42 @@
 
 public class Function{
 
-   public static void main(String[] args) {
-      // System.out.println(sum(10, 20));
+//    public static void main(String[] args) {
+//       // System.out.println(sum(10, 20));
 
+//       System.out.println(swap(4, 5));
       
-   } 
+//    } 
 
 
-   // static int sum(int a, int b) {
-   //    return a + b;
+//    // static int sum(int a, int b) {
+//    //    return a + b;
       
-   // }
+//    // }
 
-      static void swap(int a, int b) {
-         int temp = a;
-         a = b;   
-         b = temp;
+//       static int swap(int a, int b) {
+//          int temp = a;
+//          a = b;   
+//          b = temp;
+         
+         
+
+//       }
+// }
 
 
-      }
+// to swap numbers using function we need to do with arrayas or objects because in java awap do not have any return type
+
+public static void main(String[] args) {
+   int[] nums = {4, 5};
+   swap(nums);
+   System.out.println(nums[0]);
+   System.out.println(nums[1]);
+}
+static void swap(int[] nums){
+   int temp = nums[0];
+   nums[0] = nums[1];
+   nums[1] = temp;
+}
+
 }
