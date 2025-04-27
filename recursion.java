@@ -8,15 +8,22 @@ public class recursion {
         func(i+1,N);
     }
 
-    static void func2(int i,int n){//print 1 to N with recursion
-        if(i>n){
+    // static void func2(int i,int n){//print 1 to N with recursion
+    //     if(i>n){
+    //         return;
+    //     }
+    //     System.out.println(i);
+    //     func2(i+1,n);
+    // }
+// using backtracking
+    static void func2(int i,int n){
+        if(i<1){
             return;
         }
-        System.out.println(i);
-        func2(i+1,n);
-
-
+        func2(i-1,n);
+        System.out.print(i+" ");
     }
+
     static void func3(int n){//print N to 1 with recursion
         if(n==0) return;
         System.out.println(n);
@@ -26,13 +33,17 @@ public class recursion {
 
     }
 
+    
+
+//drivers code.......................................................
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
         int n = sc.nextInt();
 
         sc.close();
         // func(1,N);
-        // func2(1,n);
-        func3(n);
+        // func2(n,n);
+        // func3(n);
+        
     }
 }
